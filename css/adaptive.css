@@ -1,0 +1,622 @@
+/* ==========================================
+   1200px
+========================================== */
+
+@media (max-width:1200px){
+
+    .container{
+        max-width:1000px;
+    }
+
+    .slide-content{
+
+        width:600px;
+
+        margin-left:50px;
+    }
+
+    .slide-content h1{
+
+        font-size:52px;
+    }
+
+}
+
+
+/* ==========================================
+   992px
+========================================== */
+
+@media (max-width:992px){
+
+    .nav{
+        display:none;
+    }
+
+    .header-phone{
+        display:none;
+    }
+
+    .burger{
+
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+
+        cursor:pointer;
+    }
+
+    .burger span{
+
+        width:30px;
+        height:3px;
+
+        background:white;
+
+        transition:.3s;
+    }
+
+    .mobile-menu{
+
+        position:fixed;
+
+        top:90px;
+        left:-100%;
+
+        width:100%;
+        height:calc(100vh - 90px);
+
+        background:#111;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        padding-top:50px;
+
+        transition:.4s;
+
+        z-index:999;
+    }
+
+    .mobile-menu.active{
+
+        left:0;
+    }
+
+    .mobile-menu a{
+
+        color:white;
+
+        font-size:22px;
+
+        padding:20px 30px;
+
+        border-bottom:
+        1px solid rgba(255,255,255,.1);
+    }
+
+    .slide-content{
+
+        width:100%;
+
+        padding:0 30px;
+
+        margin:180px 0 0;
+    }
+
+    .slide-content h1{
+
+        font-size:26px;
+        line-height: 1.15;
+        max-width: 280;
+    }
+
+    .slide-info{
+
+        flex-wrap:wrap;
+    }
+
+    .about-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .services-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .cabinet-wrapper{
+
+        flex-direction:column;
+    }
+
+    .cabinet-content{
+
+        text-align:center;
+    }
+
+    .cabinet-content h2{
+
+        font-size:38px;
+    }
+
+    .cabinet-item{
+
+        text-align:left;
+    }
+    @media(max-width:992px){
+
+    .contacts-wrapper{
+
+        grid-template-columns:1fr;
+    }
+
+    .contacts-map{
+
+        min-height:350px;
+    }
+    .price-box{
+
+        grid-template-columns:1fr;
+    }
+
+    .price-content h2{
+
+        font-size:40px;
+    }
+
+    .price-features{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contacts{
+
+        padding:90px 0;
+    }
+
+    .contact-card a,
+    .contact-card p{
+
+        font-size:18px;
+    }
+
+}
+
+}
+
+
+/* ==========================================
+   768px
+========================================== */
+
+@media (max-width:768px){
+
+    .header .container{
+
+        height:80px;
+    }
+
+    .logo a{
+
+        font-size:24px;
+    }
+
+    
+    .header-btn{
+
+        display:none;
+    }
+
+    .slide-content{
+
+        position: relative;
+        height: 100%;
+        text-align:center;
+
+        
+        margin-top:120px;
+        padding:0 20px;
+    }
+
+    .slide-company{
+
+        margin:auto auto 20px;
+    }
+
+    .slide-content h1{
+
+        font-size:24px;
+        line-height:1.2;
+        margin-bottom:15px;
+    }
+
+    .slide-content p{
+
+        font-size:14px;
+        margin-bottom: 25px;
+    }
+
+    .slide-info{
+
+        justify-content:center;
+    }
+
+    .info-item{
+
+        width:100%;
+    }
+
+    .hero-btn{
+
+
+        text-align:center;
+
+        bottom: 80px;
+        left: 20px;
+
+        position:static;
+        width:100%;
+        max-width:280px;
+    }
+
+    .about{
+
+        padding:80px 0;
+    }
+
+    .about h2{
+
+        font-size:34px;
+    }
+
+    .services{
+
+        padding:80px 0;
+    }
+
+    .services h2{
+
+        font-size:34px;
+    }
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .service-card{
+
+        padding:30px;
+    }
+    
+        .nav{
+        display:none;
+    }
+
+    .header-phone{
+        display:none;
+    }
+
+    .header-btn{
+        display:none;
+    }
+        .nav{
+        display:none;
+    }
+
+    .header-btn{
+        display:none;
+    }
+
+    .header-phone a{
+
+        font-size:14px;
+        font-weight:700;
+    }
+
+    .slider-prev,
+    .slider-next{
+
+        top:55%;
+    }
+
+    .hero-btn{
+
+        width:auto;
+
+        padding:16px 28px;
+    }
+
+     .hero{
+        height:85vh;
+    }
+
+    .advantages-grid{
+        grid-template-columns:1fr;
+    }
+
+    .wide{
+        grid-column:auto;
+    }
+
+    .adv-content h3{
+        font-size:24px;
+    }
+     .services{
+
+        padding:90px 0;
+    }
+
+    .services-info h2{
+
+        font-size:36px;
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .service-card{
+
+        min-height:auto;
+    }
+
+     .projects-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .section-header h2{
+
+        font-size:42px;
+    }
+
+    .project-card{
+
+        height:280px;
+    }
+
+    @media(max-width:768px){
+
+    .footer-top{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+    }
+
+}
+
+}
+
+
+/* ==========================================
+   576px
+========================================== */
+
+@media (max-width:576px){
+
+    .container{
+
+        padding:0 15px;
+    }
+
+    .logo a{
+
+        font-size:24px;
+    }
+
+    .slide-content{
+
+        margin-top:120px;
+    }
+
+    .slide-content h1{
+
+        font-size:30px;
+    }
+
+    .slide-content p{
+
+        font-size:16px;
+
+        line-height:1.6;
+    }
+
+    .slide-company{
+
+        font-size:14px;
+    }
+
+    .hero-btn{
+
+        padding:16px;
+    }
+
+    .about h2,
+    .services h2{
+
+        font-size:30px;
+    }
+
+    .about-card{
+
+        padding:25px;
+    }
+
+    .about-card h3{
+
+        font-size:40px;
+    }
+
+    .counter{
+
+        font-size:44px;
+    }
+
+    .service-card h3{
+
+        font-size:22px;
+    }
+
+    .service-card p{
+
+        font-size:15px;
+    }
+
+    .top-btn{
+
+        width:50px;
+        height:50px;
+
+        right:15px;
+        bottom:15px;
+    }
+
+}
+
+
+/* ==========================================
+   420px
+========================================== */
+
+@media (max-width:420px){
+
+    .logo a{
+
+        font-size:20px;
+    }
+
+    .slide-content h1{
+
+        font-size:26px;
+    }
+
+    .slide-content p{
+
+        font-size:15px;
+    }
+
+    .hero-btn{
+
+        font-size:15px;
+    }
+
+    .mobile-menu a{
+
+        font-size:18px;
+    }
+
+}
+
+
+/* ==========================================
+   GALLERY MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .gallery-grid{
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+    .gallery-item img{
+
+        height:250px;
+
+        object-fit:cover;
+    }
+
+}
+
+
+/* ==========================================
+   FORM MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    #contact-form{
+
+        width:100%;
+    }
+
+    .form-input{
+
+        width:100%;
+
+        font-size:16px;
+
+        padding:15px;
+    }
+
+}
+
+
+/* ==========================================
+   PRICE TABLE MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .price-table{
+
+        overflow-x:auto;
+    }
+
+    .price-table table{
+
+        min-width:600px;
+    }
+
+}
+
+
+/* ==========================================
+   FOOTER MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .footer{
+
+        text-align:center;
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}

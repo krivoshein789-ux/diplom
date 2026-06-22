@@ -127,8 +127,9 @@
 
     .services-grid{
 
-        grid-template-columns:
-        repeat(2,1fr);
+        display:flex;
+        flex-direction:column;
+        gap:20px;
     }
 
     .cabinet-wrapper{
@@ -150,7 +151,6 @@
 
         text-align:left;
     }
-    @media(max-width:992px){
 
     .contacts-wrapper{
 
@@ -178,22 +178,8 @@
 
 }
 
-@media(max-width:768px){
 
-    .contacts{
 
-        padding:90px 0;
-    }
-
-    .contact-card a,
-    .contact-card p{
-
-        font-size:18px;
-    }
-
-}
-
-}
 
 
 /* ==========================================
@@ -212,7 +198,17 @@
         font-size:24px;
     }
 
-    
+    .contacts{
+
+        padding:90px 0;
+    }
+
+    .contact-card a,
+    .contact-card p{
+
+        font-size:18px;
+    }
+
     .header-btn{
 
         display:none;
@@ -221,9 +217,9 @@
     .slide-content{
 
         position: relative;
-        height: 100%;
+        
         text-align:center;
-
+        margin-right:80px;
         
         margin-top:120px;
         padding:0 20px;
@@ -235,14 +231,13 @@
     }
 
     .slide-content h1{
-
+        
         font-size:24px;
         line-height:1.2;
         margin-bottom:15px;
     }
 
     .slide-content p{
-
         font-size:14px;
         margin-bottom: 25px;
     }
@@ -271,12 +266,11 @@
     }
 
     .about{
-
         padding:80px 0;
     }
 
     .about h2{
-
+        margin-top:100px;
         font-size:34px;
     }
 
@@ -294,18 +288,16 @@
 
         grid-template-columns:1fr;
     }
-
-    .services-grid{
-
-        grid-template-columns:1fr;
+    .callback-wrapper{
+        flex-direction:column;
     }
 
-    .service-card{
-
-        padding:30px;
+    .callback-form{
+        width:100%;
     }
+
     
-        .nav{
+    .nav{
         display:none;
     }
 
@@ -332,7 +324,7 @@
 
     .slider-prev,
     .slider-next{
-
+        transform:scale(0.8);
         top:55%;
     }
 
@@ -358,24 +350,29 @@
     .adv-content h3{
         font-size:24px;
     }
-     .services{
-
+    .services{
         padding:90px 0;
     }
 
-    .services-info h2{
-
-        font-size:36px;
+    .services-layout{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
     }
 
     .services-grid{
-
-        grid-template-columns:1fr;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
     }
 
     .service-card{
-
+        width:100%;
         min-height:auto;
+    }
+
+    .services-info h2{
+        font-size:32px;
     }
 
      .projects-grid{
@@ -393,15 +390,15 @@
         height:280px;
     }
 
-    @media(max-width:768px){
-
+    .price-label{
+        text-align: center;
+    }
     .footer-top{
 
         grid-template-columns:1fr;
 
         gap:40px;
     }
-
     .footer-bottom{
 
         flex-direction:column;
@@ -411,9 +408,55 @@
         text-align:center;
     }
 
+      .steps-grid{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .step-card{
+        width:100%;
+        max-width:100%;
+    }
+
+    .step-number{
+        width:60px;
+        height:60px;
+        font-size:22px;
+    }
+    .request-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* важно */
 }
 
+  .request-info,
+  .request-form {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    h2
+    {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+  }
+
+  .request-form {
+    min-width: 0; /* 🔥 ключевой фикс для overflow */
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+    background: #121212; /* или твой цвет */
+  }
 }
+
 
 
 /* ==========================================
